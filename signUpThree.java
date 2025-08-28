@@ -193,13 +193,16 @@ public class signUpThree extends JFrame implements ActionListener {
                  conn.s.executeUpdate(query2);
 
                  JOptionPane.showMessageDialog(null,"Card Number: " + cardnumber + "\n Pin: " + pinnumber);
+                 setVisible(false);
+                 new Deposit(pinnumber).setVisible(false); //any amount should be deposited after account creation
              }
             } catch (Exception e){
                 System.out.println(e);
             }
 
        } else if(ae.getSource() == cancel){
-
+          setVisible(false);
+          new Login().setVisible(true); // if signup cancelled then back to main screen
        }
     }
 
