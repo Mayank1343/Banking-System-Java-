@@ -88,7 +88,7 @@ public class Pinchange extends JFrame implements ActionListener {
                 Conn conn = new Conn();
                 String query1 ="update bank set pin = '"+rpin+"' where pin ='"+pinnumber+"'";
                 String query2 ="update login set pin = '"+rpin+"' where pin ='"+pinnumber+"'";
-                String query3 ="update signUpThree set pinNumber = '"+rpin+"' where pinNumber ='"+pinnumber+"'";
+                String query3 ="update signUpThree set pinnumber = '"+rpin+"' where pinnumber ='"+pinnumber+"'";
 
                 conn.s.executeUpdate(query1);
                 conn.s.executeUpdate(query2);
