@@ -1,4 +1,5 @@
 🏦 Banking System Java Project 💻
+
 🚀 Overview
 This project is a simple banking system desktop application developed in Java using Swing for the GUI. It simulates ATM functionalities such as user login, account management, and transactions with backend connectivity to a SQL database. 🔐💳
 
