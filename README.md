@@ -1,69 +1,100 @@
-🏦 Banking System Java Project 💻
+🏦 Banking System – Java Project 💻
+
+A simple Banking System desktop application built in Java (Swing GUI) that simulates core ATM functionalities such as user login, account management, and transactions, with MySQL database integration. 🔐💳
 
 🚀 Overview
-This project is a simple banking system desktop application developed in Java using Swing for the GUI. It simulates ATM functionalities such as user login, account management, and transactions with backend connectivity to a SQL database. 🔐💳
+
+This project demonstrates how banking operations can be implemented with a desktop-based interface. It is designed with Java Swing for GUI, JDBC for database connectivity, and a SQL backend for secure storage and validation of user details.
 
 ✨ Features
-🔑 User login with card number and PIN authentication.
-📝 User registration (sign up).
-💸 Transaction management interface (deposit, withdrawal, balance inquiry).
-🔗 JDBC connectivity with a SQL database to store and validate user data.
-🎨 Responsive GUI built with Java Swing components.
-⚠️ Basic error handling and validation.
 
+🔑 Secure Login – Card number & PIN authentication.
+
+📝 User Registration – Sign up for new accounts.
+
+💸 Transaction Management – Deposit, withdrawal, and balance inquiry.
+
+🔗 JDBC Connectivity – SQL database for user data and transactions.
+
+🎨 Interactive GUI – Built with Java Swing components.
+
+⚠️ Validation & Error Handling – Basic input checks and error messages.
 
 🛠️ Requirements
-☕ Java Development Kit (JDK) 21 or higher.
-🐬 MySQL or compatible SQL database.
-🔌 JDBC driver for database connectivity.
-🛠️ IDE like IntelliJ IDEA, Eclipse, or command-line tools.
 
+☕ Java JDK 21 or higher
 
-📥 Setup and Installation
-Clone the repository:
+🐬 MySQL (or compatible SQL database)
 
-bash
+🔌 JDBC Driver (for MySQL)
+
+🛠️ IDE (IntelliJ IDEA, Eclipse) or command-line tools
+
+📥 Setup & Installation
+
+Clone the Repository
+
 git clone https://github.com/Mayank1343/Banking-System-Java-.git
-Import the project in your preferred Java IDE.
 
-Ensure the required JDK is configured (version 21 recommended). ✅
 
-Create a database and table structure to store user login details and transactions. Example table structure:
+Import into IDE (IntelliJ/Eclipse) or open via command line.
 
-sql
+Configure JDK – Ensure Java 21+ is set up.
+
+Setup Database
+Create a database and required tables. Example:
+
 CREATE TABLE login (
     cardNumber VARCHAR(20) PRIMARY KEY,
     pin VARCHAR(20) NOT NULL
 );
-Update the database connection settings in the Conn class (database URL, username, password). 🔧
 
-Place banklogo.jpg inside the resources folder or project root so the app can load the logo. 🖼️
 
-Build and run the Login class to start the application. ▶️
+Update Connection Settings
+In Conn.java, modify:
 
+String url = "jdbc:mysql://localhost:3306/yourDatabase";
+String user = "yourUsername";
+String password = "yourPassword";
+
+
+Resources Setup
+Place banklogo.jpg inside the resources/ folder or project root.
+
+Run Application
+Start the program from Login.java.
 
 🎮 Usage
-Enter your card number and PIN to login 🏧.
-If you are a new user, click the "Sign Up" button to register 📝.
-Perform banking operations like deposits, withdrawals, and checking balance 💰.
+
+Enter Card Number + PIN → Login 🏧
+
+New user? → Click Sign Up 📝
+
+Perform transactions: Deposit / Withdraw / Check Balance 💰
 
 🗂️ Project Structure
-Login.java - Main login GUI class.
-Conn.java - Handles database connection.
-Transactions.java - Transaction management GUI.
-signUpOne.java - User registration GUI.
-Resources folder - Contains the bank logo image and other assets.
-SQL scripts (if any) for database setup.
-
+Banking-System-Java/
+│── Login.java          # Main login GUI
+│── Conn.java           # Database connection handler
+│── Transactions.java   # Transaction management GUI
+│── signUpOne.java      # User registration GUI
+│── /resources          # Bank logo & assets
+│── /sql-scripts        # (Optional) DB setup scripts
 
 📸 Screenshots
-(Add screenshots here to showcase your app's UI)
+
+(Add UI screenshots here for better showcase 📷)
 
 ⚠️ Troubleshooting
-Ensure JDK and database connections are properly configured. ✔️
-Verify the placement of resource files like images. 🖼️
-Check that required classes (Conn, Transactions, signUpOne) exist and are compiled. 🛠️
-Use IDE logs or terminal output for debugging. 🐞
+
+✔️ Verify JDK installation & database connectivity
+
+🖼️ Ensure images (e.g., banklogo.jpg) are in the correct folder
+
+🛠️ Check class compilation (Conn, Transactions, signUpOne)
+
+🐞 Use IDE console/logs to debug runtime issues
 
 👤 Author
+
 Mayank Sharma 🎓
