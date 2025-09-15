@@ -9,33 +9,25 @@ This project demonstrates how banking operations can be implemented with a deskt
 ✨ Features
 
 🔑 Secure Login – Card number & PIN authentication.
-
 📝 User Registration – Sign up for new accounts.
-
 💸 Transaction Management – Deposit, withdrawal, and balance inquiry.
-
 🔗 JDBC Connectivity – SQL database for user data and transactions.
-
 🎨 Interactive GUI – Built with Java Swing components.
-
 ⚠️ Validation & Error Handling – Basic input checks and error messages.
+
 
 🛠️ Requirements
 
 ☕ Java JDK 21 or higher
-
 🐬 MySQL (or compatible SQL database)
-
 🔌 JDBC Driver (for MySQL)
-
 🛠️ IDE (IntelliJ IDEA, Eclipse) or command-line tools
+
 
 📥 Setup & Installation
 
 Clone the Repository
-
 git clone https://github.com/Mayank1343/Banking-System-Java-.git
-
 
 Import into IDE (IntelliJ/Eclipse) or open via command line.
 
@@ -64,13 +56,13 @@ Place banklogo.jpg inside the resources/ folder or project root.
 Run Application
 Start the program from Login.java.
 
+
 🎮 Usage
 
 Enter Card Number + PIN → Login 🏧
-
 New user? → Click Sign Up 📝
-
 Perform transactions: Deposit / Withdraw / Check Balance 💰
+
 
 🗂️ Project Structure
 Banking-System-Java/
@@ -85,15 +77,14 @@ Banking-System-Java/
 
 (Add UI screenshots here for better showcase 📷)
 
+
 ⚠️ Troubleshooting
 
 ✔️ Verify JDK installation & database connectivity
-
 🖼️ Ensure images (e.g., banklogo.jpg) are in the correct folder
-
 🛠️ Check class compilation (Conn, Transactions, signUpOne)
-
 🐞 Use IDE console/logs to debug runtime issues
+
 
 👤 Author
 
